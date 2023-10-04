@@ -1,0 +1,37 @@
+.toggle-container{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider {
+  width: 30px;
+  height: 15px;
+  background-color: #828282;
+  border-radius: 15px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.isChecked {
+  background-color: green;
+}
+
+.slider::before {
+  content: '';
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  transition: left 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.isChecked::before {
+  left: 15px;
+}

@@ -1,0 +1,30 @@
+.scrollbar-container {
+  display: flex;
+  gap: 100px;
+}
+
+p {
+  color: blue;
+  font-weight: 700;
+}
+
+.with-scrollbar, .without-scrollbar {
+  width: 300px;
+  height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: 0.3125rem;
+}
+
+.with-scrollbar::-webkit-scrollbar {
+  background-color: #f6f8fb;
+  width: 0.3125rem;
+}
+
+.with-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: red;
+}
+
+.without-scrollbar::-webkit-scrollbar {
+  width: 0;
+}

@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HiddenDateTimeInput from './components/HiddenDateTimeInput';
+import Toggle from './components/Toggle';
+import CustomScrollbar from './components/CustomScrollbar';
+import Skeletons from './components/Skeletons';
+import Loaders from './components/Loaders';
+import FloatingInput from './components/FloatingInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FloatingInput id='email' label='Email' />
+      <HiddenDateTimeInput />
+      <Toggle />
+      <CustomScrollbar />
+      <Skeletons />
+      <Loaders />
     </div>
   );
 }

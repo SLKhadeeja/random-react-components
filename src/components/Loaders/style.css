@@ -1,0 +1,47 @@
+.loader-container {
+  display: flex;
+  gap: 3rem
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  animation: spin 2s linear infinite;
+  fill: #007acc;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slider-box {
+  width: 500px;
+  position: relative;
+  overflow: hidden;
+  height: 20px; 
+  background-color: #faf8f8;
+}
+
+.slider-handle {
+  background: linear-gradient(to right, #007acc, #ff6b6b);
+  width: 1.75rem;
+  height: 2px;
+  position: absolute;
+  animation: slide-right 3s linear infinite;
+}
+
+@keyframes slide-right {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
